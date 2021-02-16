@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*---------------------
+		General
+---------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-image: url(https://i.imgur.com/SX6Uq2c.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.examples {
+	width: 60%;
+	margin: 4% auto;
+	padding: 4rem;
+	background-color: rgba(35,35,35,.85);
+	color: #FEFEFE;
+	position: relative;
+	-webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+input {
+	color: #FEFEFE;
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+}
+
+label {
+	position: absolute;
+	pointer-events: none;
+	top: 5rem;
+	left: 5rem;
+}
+
+input,
+label {
+	font-size: 16px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.examples input:focus + label,
+.examples input:active + label,
+.examples input:valid + label {
+	font-size: 12px;
+	color: #AAA;
+}
+
+@media (max-width: 991px){
+	.examples {
+		width: 80%;
+	}
+}
+
+@media (max-width: 767px){
+	.examples {
+		width: 90%;
+	}
+
+	.examples:nth-child(1){
+		margin-top: 8%;
+	}
+}
+
+@media (max-width: 541px){
+	.examples {
+		padding: 2rem;
+	}
+
+	label {
+		top: 3rem;
+		left: 3rem;
+	}
+}
+
+/*------- Example 1 -------*/
+
+.example_1 input {
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid #BBB;
+}
+
+.example_1 input:active,
+.example_1 input:focus {
+	outline: none;
+	border-bottom: 1.5px solid #4FAEFF;
+}
+
+.example_1 input:focus + label,
+.example_1 input:active + label,
+.example_1 input:valid + label {
+	top: 3.6rem;
+}
+
+/*------- Example 2 -------*/
+
+.example_2 input {
+	padding: 1.8rem 1rem 1rem;
+	border: 1px solid #BBB;
+	border-radius: 15px;
+}
+
+.example_2 input:active,
+.example_2 input:focus {
+	outline: none;
+	border: 1.5px solid #4FAEFF;
+}
+
+.example_2 input:focus + label,
+.example_2 input:active + label,
+.example_2 input:valid + label {
+	top: 4.5rem;
+}
+
+.example_2 label {
+	top: 5.5rem;
+}
+
+/*------- Example 3 -------*/
+
+.example_3 input {
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid #BBB;
+}
+
+.example_3 input:active,
+.example_3 input:focus {
+	outline: none;
+	border-bottom: 1.5px solid #4FAEFF;
+}
+
+.example_3 input:focus + label,
+.example_3 input:active + label,
+.example_3 input:valid + label {
+	top: 8rem;
+}
+
+/*------- Example Queries -------*/
+
+@media (max-width: 541px){
+	.example_1 input:focus + label,
+	.example_1 input:active + label,
+	.example_1 input:valid + label {
+		top: 1.6rem;
+	}
+
+	.example_2 input:focus + label,
+	.example_2 input:active + label,
+	.example_2 input:valid + label {
+		top: 2.5rem !important;
+	}
+
+	.example_2 label {
+		top: 3.5rem !important;
+	}
+
+	.example_3 input:focus + label,
+	.example_3 input:active + label,
+	.example_3 input:valid + label {
+		top: 5.75rem;
+	}
+}

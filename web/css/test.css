@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*--------------
+	General
+--------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+}
+
+div > div {
+	width: 100%;
+	padding: 5vh 20%;
+	max-height: 30vh;
+}
+
+.white-background {
+	background-color: rgba(255,255,255,.7);
+	padding: 1.5rem;
+}
+
+/*--------------
+	Sección 1
+--------------*/
+
+.sect-1 {
+	background-color: #6ACE89;
+}
+
+.sect-1 h1 {
+	text-align: center;
+	color: #F8CCE0;
+}
+
+.sect-1 p {
+	text-align: right;
+}
+
+/*--------------
+	Sección 2
+--------------*/
+
+.sect-2 {
+	background-color: #62A6F3;
+	color: #fff;
+}
+
+.sect-2 h1 {
+	text-align: right;
+	color: #FFAF84;
+}
+
+.sect-2 p {
+	text-align: center;
+	line-height: 1.8rem;
+}
+
+/*--------------
+	Sección 3
+--------------*/
+
+.sect-3 {
+	background-color: #F36265;
+}
+
+.sect-3 h1 {
+	color: #99D7D5;
+}
+
+.sect-3 p {
+	font-size: .8rem;
+}
